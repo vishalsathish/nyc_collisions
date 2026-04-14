@@ -8,6 +8,7 @@ Transform the data:
 **Silver** - filtered and cleaned
 **Gold** - business ready and production grade
 
+![Image](https://github.com/user-attachments/assets/9d400cd2-ada4-4ec1-bbe9-12de962d4431)
 
 04/14/2026 Lessons Learned:
 Batch processing and pagination - getting bits of the data at a time through chunks at a time instead of all at once.
