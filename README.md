@@ -1,6 +1,6 @@
 # nyc_collisions
 
-**End-to-End Data Pipeline with NYC Motor Vehicle Collisions**__
+**End-to-End Data Pipeline with NYC Motor Vehicle Collisions**
 
 Goal is to extract the data via API
 Transform the data:
