@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 def load_to_postgres():
 
     # connection string (update password)
-    engine = create_engine("postgresql://postgres:password@localhost:5432/nyc_collisions")
+    engine = create_engine("postgresql://postgres:sa2vs38!SQL@localhost:5432/nyc_collisions")
 
     # read gold tables
     crashes_by_borough = pd.read_parquet("data/gold/crashes_by_borough.parquet")
