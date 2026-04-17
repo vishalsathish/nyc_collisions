@@ -7,6 +7,7 @@ def load_to_postgres():
     # connection string (update password)
     password = os.getenv("DB_PASSWORD")
     engine = create_engine(f"postgresql://postgres:{password}@localhost:5432/nyc_collisions")
+    
 
     # read gold tables
     crashes_by_borough = pd.read_parquet("data/gold/crashes_by_borough.parquet")
