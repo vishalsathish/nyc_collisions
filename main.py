@@ -1,6 +1,7 @@
 from src.extract import extract_data
 from src.transform import transform_data
 from src.load import gold_tables
+from src.load_postgres import load_to_postgres
 
 def run_pipeline():
     print("Starting Bronze ingestion......")
@@ -14,6 +15,10 @@ def run_pipeline():
     print("Starting Gold tables creation........")
     gold_tables()
     print("Tables successfully created...........")
+
+    print("Loading gold tables to Postgres........")
+    load_to_postgres()
+    print("Tables loaded to Postgres.............")
 
 if __name__ == "__main__":
     run_pipeline()
