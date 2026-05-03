@@ -8,6 +8,12 @@ Built an end-to-end data pipeline using Apache Airflow to ingest, transform, and
 
 <img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/6bcfb10d-74b3-4364-b7c8-30906d4c9705" />
 
+**Ensure Authentication Correct for load_to_postgres**
+<img width="315" height="312" alt="image" src="https://github.com/user-attachments/assets/bde26cc0-b0b2-4d90-b0a1-c52e87c38d03" />
+
+Please be aware: Apache Airflow will not be able to load data in database if password or connection engine is setup incorrectly. 
+
+
 ## Project Overview
 
 This project builds a production-style data pipeline that:
