@@ -2,15 +2,18 @@
 Built an end-to-end data pipeline using Apache Airflow to ingest, transform, and load NYC motor vehicle collision data into PostgreSQL, leveraging Parquet-based intermediate storage and SQLAlchemy for database integration.
 
 <img width="793" height="516" alt="image" src="https://github.com/user-attachments/assets/b7110673-561e-417c-acc2-a7f21edcde33" />
+
 **System Design and Architecture**
 
 
 
 <img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/6bcfb10d-74b3-4364-b7c8-30906d4c9705" />
+
 **Database Queries**
 
 
 <img width="315" height="312" alt="image" src="https://github.com/user-attachments/assets/bde26cc0-b0b2-4d90-b0a1-c52e87c38d03" />
+
 **Ensure Authentication Correct for load_to_postgres**
 
 Please be aware: Apache Airflow will not be able to load data in database if password or connection engine is setup incorrectly. 
