@@ -8,7 +8,7 @@ Built an end-to-end data pipeline using Apache Airflow to ingest, transform, and
 
 <img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/6bcfb10d-74b3-4364-b7c8-30906d4c9705" />
 
-## 📌 Project Overview
+## Project Overview
 
 This project builds a production-style data pipeline that:
 
