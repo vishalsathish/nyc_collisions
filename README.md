@@ -13,6 +13,8 @@ Built an end-to-end data pipeline using Apache Airflow to ingest, transform, and
 
 
 <img width="315" height="312" alt="image" src="https://github.com/user-attachments/assets/bde26cc0-b0b2-4d90-b0a1-c52e87c38d03" />
+<img width="1016" height="276" alt="image" src="https://github.com/user-attachments/assets/3d5d4bf8-d8bf-472c-b56f-c00971ca9bb3" />
+
 
 **Ensure Authentication Correct for load_to_postgres**
 
