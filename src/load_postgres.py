@@ -15,9 +15,10 @@ def load_to_postgres():
     top_factors = pd.read_parquet("data/gold/top_factors.parquet")
 
     # load into postgres
-    crashes_by_borough.to_sql("crashes_by_borough", engine, if_exists="replace", index=False)
-    monthly_trends.to_sql("monthly_trends", engine, if_exists="replace", index=False)
-    crash_by_hour.to_sql("crash_by_hour", engine, if_exists="replace", index=False)
-    top_factors.to_sql("top_factors", engine, if_exists="replace", index=False)
+    with engine.connect() as conn:
+        crashes_by_borough.to_sql("crashes_by_borough", conn, if_exists="replace", index=False)
+        monthly_trends.to_sql("monthly_trends", conn, if_exists="replace", index=False)
+        crash_by_hour.to_sql("crash_by_hour", conn, if_exists="replace", index=False)
+        top_factors.to_sql("top_factors", conn, if_exists="replace", index=False)
 
     print("Gold data loaded into PostgreSQL")
