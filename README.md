@@ -1,15 +1,5 @@
 # nyc_collisions
-
-# **End-to-End Data Pipeline with NYC Motor Vehicle Collisions**
-
-Goal is to extract the data via API
-Transform the data:
-
-**Bronze** - loading zone and raw ingestion
-
-**Silver** - filtered and cleaned
-
-**Gold** - business ready and production grade
+Built an end-to-end data pipeline using Apache Airflow to ingest, transform, and load NYC motor vehicle collision data into PostgreSQL, leveraging Parquet-based intermediate storage and SQLAlchemy for database integration.
 
 <img width="793" height="516" alt="image" src="https://github.com/user-attachments/assets/b7110673-561e-417c-acc2-a7f21edcde33" />
 
@@ -17,12 +7,6 @@ Transform the data:
 **Database Queries**
 
 <img width="1303" height="596" alt="image" src="https://github.com/user-attachments/assets/6bcfb10d-74b3-4364-b7c8-30906d4c9705" />
-
-# 🚦 NYC Collisions Data Pipeline (Airflow + PostgreSQL)
-
-An end-to-end data engineering pipeline that ingests, transforms, and loads NYC motor vehicle collision data into a PostgreSQL database using Apache Airflow for orchestration.
-
----
 
 ## 📌 Project Overview
 
@@ -33,41 +17,6 @@ This project builds a production-style data pipeline that:
 * Stores processed data in Parquet format (data lake style)
 * Loads curated datasets into PostgreSQL for downstream analytics
 * Orchestrates the entire workflow using Apache Airflow
-
----
-
-## Architecture Simplified
-
-```
-        +------------------+
-        |  NYC Open Data   |
-        +--------+---------+
-                 |
-                 v
-        +------------------+
-        |   Extract Step   |
-        +------------------+
-                 |
-                 v
-        +------------------+
-        | Transform Step   |
-        +------------------+
-                 |
-                 v
-        +----------------------+
-        | Gold Data (Parquet)  |
-        +----------------------+
-                 |
-                 v
-        +----------------------+
-        | PostgreSQL Database  |
-        +----------------------+
-                 |
-                 v
-        +----------------------+
-        | Airflow Orchestration|
-        +----------------------+
-```
 
 ---
 
@@ -272,7 +221,7 @@ The pipeline produces the following tables in PostgreSQL:
 * Fix one stage at a time:
 
   * Extract → Transform → Load
-* Don’t debug everything at once
+* Don’t debug evert stage at once
 
 ---
 
@@ -282,11 +231,5 @@ The pipeline produces the following tables in PostgreSQL:
 * Add data validation (Great Expectations)
 * Implement incremental loads instead of full refresh
 * Add monitoring & alerting
-* Deploy to cloud (AWS/GCP/Azure)
-
----
-
-## Contact
-
-Feel free to reach out for questions or collaboration!
+* Deploy to cloud AWS/GCP/Azure
 
